@@ -1,0 +1,12 @@
+<h1>Seja bem vindo ao curso do Noob Code</h1>
+<p>Aprendendo sobre views, o famoso V da arquitetura MVC.</p>
+
+
+<% @posts.each do |post| %>
+    <h1> 
+        <%= link_to post.title, post %>
+    </h1>
+<% end %>
+
+
+<%= link_to "Posts", posts_path%>
